@@ -1,0 +1,11 @@
+ <div class="container-fluid">
+  <h1>The wonderful animals</h1>
+  <div class="row">
+    <div class="col-sm-5" style="background-color:#EDCDC2;">
+      <pb-animal-list  (animalSelected)="selectedAnimal = $event"></pb-animal-list>
+    </div>
+    <div class="col-sm-7" style="background-color:#95DEE3;">
+      <pb-animal-details [selectedAnimal]="selectedAnimal"></pb-animal-details>
+    </div>
+  </div>
+</div>
